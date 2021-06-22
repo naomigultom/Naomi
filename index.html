@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+
+    <div class="employee-form">
+        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+            <div>
+                <label>nama</label><label class="validation-error hide" id="fullNameValidationError"></label>
+                <input type="text" name="namalengkap" id="namalengkap">
+            </div>
+            <div>
+                <label>npm</label>
+                <input type="text" name="npm" id="npm">
+            </div>
+            <div>
+                <label>alamat</label>
+                <input type="text" name="alamat" id="alamat">
+            </div>
+            <div>
+                <label>email</label>
+                <input type="text" name="email" id="email">
+            </div>
+            <div>
+            </div>
+            <div class="form-action-buttons">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <br />
+    <div class="employees-table">
+        <table class="list" id="employeeList">
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Email Id</th>
+                    <th>Salary</th>
+                    <th>City</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <script src="fungsi.js"></script>
+</body>
+
+</html>
